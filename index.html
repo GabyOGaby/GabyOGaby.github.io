@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gabriel Poirier — Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="nav-left">
+        <span class="pill">Gabriel Poirier</span>
+        <span class="badge">Academic Portfolio</span>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="academic.html">Academic projects</a>
+        <a href="personal.html">Personal projects</a>
+      </div>
+
+      <div class="lang">
+        <span class="pill">EN</span>
+        <a class="pill" href="fr/index.html">FR</a>
+      </div>
+    </div>
+
+    <section class="hero">
+      <img class="avatar" src="assets/profile.jpg" alt="Profile picture" />
+      <div>
+        <h1>Your Name</h1>
+        <p class="subtitle">
+            1-year-old French student in his third year at ENSIMAG, with a passion for IA, software development and cybersecurity.
+        </p>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h2>Contact</h2>
+        <p class="subtitle">
+          Email: <a href="mailto:you@example.com">you@example.com</a><br/>
+          Phone: <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Quick links</h2>
+        <ul class="list">
+          <li><a href="academic.html">Academic projects</a></li>
+          <li><a href="personal.html">Personal projects</a></li>
+          <li><a href="#">LinkedIn / GitHub (optional)</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="footer">
+      © <span id="y"></span> Your Name — Built with GitHub Pages
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
