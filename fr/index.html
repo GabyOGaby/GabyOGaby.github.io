@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gabriel Poirier — Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="nav-left">
+        <span class="pill">Gabriel Poirier</span>
+        <span class="badge">Mon Portfolio</span>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Page d'accueil</a>
+        <a href="academic.html">Projets scolaires</a>
+        <a href="personal.html">Projets personnels</a>
+      </div>
+
+      <div class="lang">
+        <span class="pill" href="index.html">EN</span>
+        <a class="pill">FR</a>
+      </div>
+    </div>
+
+    <section class="hero">
+      <img class="avatar" src="assets/profile.pdf" alt="Profile picture" />
+      <div>
+        <h1>Gabriel Poirier</h1>
+        <p class="subtitle">
+            Etudiant français de 21 ans en dernière année à l'ENSIMAG, passionné par le développement de logiciels et la cybersécurité.
+Je suis actuellement à la recherche d'un stage de 20 à 26 semaines à partir du 1er mars.
+        </p>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h2>Contact</h2>
+        <p class="subtitle">
+          Email: <a href="mailto:gabrielpoirier77@gmail.com">gabrielpoirier77@gmail.com</a><br/>
+          Phone: <a href="tel:+33667779864">+33 6 67 77 98 64</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Quick links</h2>
+        <ul class="list">
+          <li><a href="academic.html">Academic projects</a></li>
+          <li><a href="personal.html">Personal projects</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="footer">
+      © <span id="y"></span> Gabriel Poirier — Built with GitHub Pages
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
