@@ -1,67 +1,97 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gabriel Poirier — Portfolio</title>
-  <link rel="stylesheet" href="assets/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriel [Nom] — Portfolio</title>
+<meta name="description" content="Ingénieur en apprentissage profond appliqué au traitement du signal — portfolio d'études.">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="nav">
-      <div class="nav-left">
-        <span class="pill">Gabriel Poirier</span>
-        <span class="badge">Academic Portfolio</span>
-      </div>
 
-      <div class="links">
-        <a href="index.html">Home</a>
-        <a href="academic.html">Academic projects</a>
-        <a href="personal.html">Personal projects</a>
-      </div>
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">Gabriel<span>·</span>[Nom]</a>
+    <button class="nav-toggle" aria-label="Ouvrir la navigation" aria-expanded="false"></button>
+    <nav class="primary-nav">
+      <ul>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-      <div class="lang">
-        <span class="pill">EN</span>
-        <a class="pill" href="fr/index.html">FR</a>
-      </div>
-    </div>
-
-    <section class="hero">
-      <img class="avatar" src="assets/profile.jpg" alt="Profile picture" />
-      <div>
-        <h1>Gabriel Poirier</h1>
-        <p class="subtitle">
-            22-year-old French student in his third year at ENSIMAG, with a passion for AI, software development and cybersecurity.
-        </p>
-      </div>
-    </section>
-
-    <section class="cards">
-      <div class="card">
-        <h2>Contact</h2>
-        <p class="subtitle">
-          Email: <a href="mailto:gabrielpoirier77@gmail.com">gabrielpoirier77@gmail.com</a><br/>
-          Phone: <a href="tel:+33667779864">+33 6 67 77 98 64</a>
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Quick links</h2>
-        <ul class="list">
-          <li><a href="academic.html">Academic projects</a></li>
-          <li><a href="personal.html">Personal projects</a></li>
-          <li><a href="#">LinkedIn</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <div class="footer">
-      © <span id="y"></span> Gabriel Poirier — Built with GitHub Pages
+<section class="hero">
+  <svg class="decay-trace" viewBox="0 0 1080 420" preserveAspectRatio="none" aria-hidden="true">
+    <path class="ghost" d="M0,80 C 150,90 300,140 420,190 C 560,250 700,300 1080,340" />
+    <path d="M0,60 C 120,65 220,110 320,170 C 430,235 520,275 640,300 C 760,322 860,335 1080,345" />
+  </svg>
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Portfolio d'études — recherche de premier emploi</span>
+    <h1>Gabriel [Nom]</h1>
+    <p class="role">Ingénieur ML · Traitement du signal &amp; IA appliquée à la physique</p>
+    <p class="lede">
+      Je conçois des modèles d'apprentissage profond pour extraire de l'information
+      utile de signaux physiques complexes — en ce moment, des courbes de relaxation
+      RMN utilisées pour détecter le stress hydrique de plantes. J'aime le travail à
+      l'interface entre physique de la mesure, données rares et réseaux de neurones.
+    </p>
+    <div class="hero-actions">
+      <a class="btn primary" href="projets.html">Voir mes projets</a>
+      <a class="btn" href="cv.html">Consulter mon CV</a>
     </div>
   </div>
+</section>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">En ce moment</span>
+      <h2>Projet de fin d'études</h2>
+    </div>
+    <p class="lede" style="max-width:38em;">
+      Classification de signaux de relaxométrie RMN-MOUSE (T2) pour la détection
+      d'états de stress et l'identification d'espèces végétales herbacées, par CNN
+      1D/2D — avec une stratégie de préentraînement sur données simulées puis
+      fine-tuning sur données expérimentales réelles.
+    </p>
+    <ul class="project-tags" style="margin-top:1.5em;">
+      <li>PyTorch</li>
+      <li>Optuna / TPE</li>
+      <li>Grad-CAM++</li>
+      <li>Signal physique</li>
+      <li>Petits jeux de données</li>
+    </ul>
+    <p style="margin-top:1.5em;"><a class="btn" href="projets.html">Détails du projet →</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Profil</span>
+      <h2>Ce que je cherche</h2>
+    </div>
+    <p style="max-width:40em;">
+      Je termine ma formation d'ingénieur et je recherche un premier poste (ou stage
+      de fin d'études) en <strong>data science</strong>, <strong>machine learning</strong>
+      ou <strong>traitement du signal appliqué</strong> — idéalement sur des problèmes
+      où la donnée est physique, rare, ou difficile à collecter. [À compléter : type
+      de poste précis, secteur visé, mobilité géographique.]
+    </p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Gabriel [Nom] — Portfolio d'études</p>
+    <p><a href="contact.html">Me contacter →</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
