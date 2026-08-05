@@ -1,47 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gabriel [Nom] — Portfolio</title>
-<meta name="description" content="Ingénieur en apprentissage profond appliqué au traitement du signal — portfolio d'études.">
-<link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gabriel Poirier — Portfolio</title>
+<meta name="description" content="Gabriel Poirier — élève-ingénieur ENSIMAG, machine learning appliqué aux signaux physiques, cybersécurité & infrastructure." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
-<header class="site-header">
+<nav class="site-nav">
   <div class="wrap">
-    <a href="index.html" class="brand">Gabriel<span>·</span>[Nom]</a>
-    <button class="nav-toggle" aria-label="Ouvrir la navigation" aria-expanded="false"></button>
-    <nav class="primary-nav">
-      <ul>
-        <li><a href="index.html" aria-current="page">Accueil</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <a class="brand" href="index.html">Gabriel Poirier</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="projets.html">Projets</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="lang-switch">
+        <span class="current">FR</span>
+        <a href="en/index.html">EN</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Élève-ingénieur — ENSIMAG</p>
+      <h1>Machine learning au service<br/>des <em>signaux physiques</em>.</h1>
+      <p class="lede">Je suis en dernière année d'école d'ingénieur, entre deep learning appliqué à des données scientifiques, systèmes bas niveau et cybersécurité. Actuellement en PFE sur la classification de signaux RMN par réseaux de neurones.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="projets.html">Voir mes projets</a>
+        <a class="btn" href="cv.html">Consulter mon CV</a>
+      </div>
+    </div>
+    <figure class="trace-fig">
+      <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg">
+        <line x1="30" y1="10" x2="30" y2="190" stroke="var(--line)" stroke-width="1"/>
+        <line x1="30" y1="190" x2="460" y2="190" stroke="var(--line)" stroke-width="1"/>
+        <path class="draw" d="M 30.0 30.0 L 37.0 37.4 L 44.0 44.3 L 51.0 51.0 L 58.0 57.3 L 65.0 63.2 L 72.0 68.9 L 79.0 74.3 L 86.0 79.4 L 93.0 84.3 L 100.0 88.9 L 107.0 93.2 L 114.0 97.4 L 121.0 101.3 L 128.0 105.1 L 135.0 108.6 L 142.0 112.0 L 149.0 115.2 L 156.0 118.2 L 163.0 121.1 L 170.0 123.8 L 177.0 126.4 L 184.0 128.9 L 191.0 131.2 L 198.0 133.5 L 205.0 135.6 L 212.0 137.6 L 219.0 139.5 L 226.0 141.3 L 233.0 143.0 L 240.0 144.6 L 247.0 146.1 L 254.0 147.6 L 261.0 149.0 L 268.0 150.3 L 275.0 151.6 L 282.0 152.8 L 289.0 153.9 L 296.0 155.0 L 303.0 156.0 L 310.0 156.9 L 317.0 157.9 L 324.0 158.7 L 331.0 159.6 L 338.0 160.3 L 345.0 161.1 L 352.0 161.8 L 359.0 162.5 L 366.0 163.1 L 373.0 163.7 L 380.0 164.3 L 387.0 164.8 L 394.0 165.3 L 401.0 165.8 L 408.0 166.3 L 415.0 166.7 L 422.0 167.2 L 429.0 167.6 L 436.0 167.9 L 443.0 168.3 L 450.0 168.6"
+          fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="30.0" cy="30.0" r="3" fill="var(--accent-2)" />
+        <circle cx="79.0" cy="74.3" r="3" fill="var(--accent-2)" />
+        <circle cx="128.0" cy="105.1" r="3" fill="var(--accent-2)" />
+        <circle cx="177.0" cy="126.4" r="3" fill="var(--accent-2)" />
+        <circle cx="226.0" cy="141.3" r="3" fill="var(--accent-2)" />
+        <circle cx="275.0" cy="151.6" r="3" fill="var(--accent-2)" />
+        <circle cx="324.0" cy="158.7" r="3" fill="var(--accent-2)" />
+        <circle cx="373.0" cy="163.7" r="3" fill="var(--accent-2)" />
+        <circle cx="422.0" cy="167.2" r="3" fill="var(--accent-2)" />
+        <text x="30" y="205" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--ink-faint)">0</text>
+        <text x="440" y="205" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--ink-faint)">t</text>
+        <text x="6" y="34" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--ink-faint)">S</text>
+      </svg>
+      <figcaption class="trace-caption">Relaxation T2 — écho de Hahn (CPMG), signal RMN-MOUSE</figcaption>
+    </figure>
   </div>
 </header>
 
-<section class="hero">
-  <svg class="decay-trace" viewBox="0 0 1080 420" preserveAspectRatio="none" aria-hidden="true">
-    <path class="ghost" d="M0,80 C 150,90 300,140 420,190 C 560,250 700,300 1080,340" />
-    <path d="M0,60 C 120,65 220,110 320,170 C 430,235 520,275 640,300 C 760,322 860,335 1080,345" />
-  </svg>
-  <div class="wrap hero-inner">
-    <span class="eyebrow">Portfolio d'études — recherche de premier emploi</span>
-    <h1>Gabriel [Nom]</h1>
-    <p class="role">Ingénieur ML · Traitement du signal &amp; IA appliquée à la physique</p>
-    <p class="lede">
-      Je conçois des modèles d'apprentissage profond pour extraire de l'information
-      utile de signaux physiques complexes — en ce moment, des courbes de relaxation
-      RMN utilisées pour détecter le stress hydrique de plantes. J'aime le travail à
-      l'interface entre physique de la mesure, données rares et réseaux de neurones.
-    </p>
-    <div class="hero-actions">
-      <a class="btn primary" href="projets.html">Voir mes projets</a>
-      <a class="btn" href="cv.html">Consulter mon CV</a>
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">En un coup d'œil</p>
+      <h2>Ce sur quoi je travaille</h2>
+    </div>
+    <div class="grid-3">
+      <div class="stat">
+        <span class="num">CNN 1D / 2D</span>
+        <span class="label">Deep learning sur signaux physiques (RMN)</span>
+      </div>
+      <div class="stat">
+        <span class="num">Cyber & Infra</span>
+        <span class="label">Stage IA appliquée à la sécurité des systèmes</span>
+      </div>
+      <div class="stat">
+        <span class="num">Bas niveau</span>
+        <span class="label">Compilation, systèmes d'exploitation, x86</span>
+      </div>
     </div>
   </div>
 </section>
@@ -49,49 +90,41 @@
 <section>
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">En ce moment</span>
-      <h2>Projet de fin d'études</h2>
+      <p class="eyebrow">Projet phare</p>
+      <h2>PFE — Classification de signaux RMN par deep learning</h2>
+      <p>Mon projet de fin d'études, mené en lien avec l'INRAE : détecter des états de stress hydrique et classifier des espèces végétales herbacées à partir de signaux de relaxométrie RMN-MOUSE (T2), à l'aide de réseaux convolutifs 1D/2D entraînés en deux temps — pré-entraînement sur données simulées, puis affinage sur données expérimentales réelles.</p>
     </div>
-    <p class="lede" style="max-width:38em;">
-      Classification de signaux de relaxométrie RMN-MOUSE (T2) pour la détection
-      d'états de stress et l'identification d'espèces végétales herbacées, par CNN
-      1D/2D — avec une stratégie de préentraînement sur données simulées puis
-      fine-tuning sur données expérimentales réelles.
-    </p>
-    <ul class="project-tags" style="margin-top:1.5em;">
-      <li>PyTorch</li>
-      <li>Optuna / TPE</li>
-      <li>Grad-CAM++</li>
-      <li>Signal physique</li>
-      <li>Petits jeux de données</li>
-    </ul>
-    <p style="margin-top:1.5em;"><a class="btn" href="projets.html">Détails du projet →</a></p>
+    <div class="hero-cta">
+      <a class="btn" href="projets.html#pfe-rmn">Voir le détail du projet →</a>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Profil</span>
-      <h2>Ce que je cherche</h2>
+      <p class="eyebrow">Recherche de poste</p>
+      <h2>Ouvert aux opportunités</h2>
+      <p>Je termine actuellement ma formation d'ingénieur et recherche un premier poste en machine learning, traitement du signal, ou cybersécurité / infrastructure. N'hésitez pas à me contacter.</p>
     </div>
-    <p style="max-width:40em;">
-      Je termine ma formation d'ingénieur et je recherche un premier poste (ou stage
-      de fin d'études) en <strong>data science</strong>, <strong>machine learning</strong>
-      ou <strong>traitement du signal appliqué</strong> — idéalement sur des problèmes
-      où la donnée est physique, rare, ou difficile à collecter. [À compléter : type
-      de poste précis, secteur visé, mobilité géographique.]
-    </p>
+    <div class="hero-cta">
+      <a class="btn primary" href="contact.html">Me contacter</a>
+      <a class="btn" href="cv.html">Télécharger mon CV</a>
+    </div>
   </div>
 </section>
 
-<footer class="site-footer">
+<footer>
   <div class="wrap">
-    <p>Gabriel [Nom] — Portfolio d'études</p>
-    <p><a href="contact.html">Me contacter →</a></p>
+    <p>© <span id="y"></span> Gabriel Poirier</p>
+    <div class="foot-links">
+      <a href="mailto:gabrielpoirier77@gmail.com">Email</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>

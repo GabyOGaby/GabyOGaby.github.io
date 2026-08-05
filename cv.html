@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CV — Gabriel Poirier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Gabriel Poirier</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="projets.html">Projets</a>
+        <a href="cv.html" class="active">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="lang-switch">
+        <span class="current">FR</span>
+        <a href="en/cv.html">EN</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:32px">
+  <div class="wrap" style="grid-template-columns:1fr; max-width:640px">
+    <div class="cv-header">
+      <div>
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h1 style="font-size:clamp(30px,4vw,42px)">Gabriel Poirier</h1>
+        <p class="lede" style="margin-bottom:0">Élève-ingénieur ENSIMAG — Machine Learning, signal, cybersécurité.</p>
+      </div>
+      <!-- Dépose ton CV en PDF dans assets/ et remplace le href ci-dessous -->
+      <a class="btn primary" href="assets/CV_Gabriel_Poirier.pdf" download>Télécharger le PDF ↓</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap" style="max-width:760px">
+
+    <div class="cv-block">
+      <h2>Formation</h2>
+      <div class="entry">
+        <div class="when">2023 — 2026</div>
+        <div>
+          <h3>Diplôme d'ingénieur</h3>
+          <span class="org">ENSIMAG, Grenoble INP</span>
+          <p>Cursus généraliste en informatique, avec spécialisation en intelligence artificielle et sécurité des systèmes. Dernière année en cours.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2021 — 2023</div>
+        <div>
+          <h3>Classes préparatoires aux grandes écoles</h3>
+          <span class="org">À compléter</span>
+          <p>Filière scientifique — mathématiques, physique et informatique.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-block">
+      <h2>Expérience</h2>
+      <div class="entry">
+        <div class="when">2025 — 2026</div>
+        <div>
+          <h3>Projet de fin d'études — Deep learning sur signaux RMN</h3>
+          <span class="org">INRAE</span>
+          <p>Classification de signaux de relaxométrie RMN-MOUSE (T2) par réseaux convolutifs 1D/2D pour détecter le stress hydrique et classifier des espèces végétales. Pipeline Python modulaire : Optuna (TPE), validation croisée répétée, explicabilité Grad-CAM++.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">À compléter</div>
+        <div>
+          <h3>Stage — IA appliquée à la cybersécurité & à l'infrastructure</h3>
+          <span class="org">À compléter</span>
+          <p>Description détaillée à venir.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-block">
+      <h2>Compétences</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h4>Machine Learning</h4>
+          <ul>
+            <li>Python, PyTorch</li>
+            <li>CNN 1D / 2D, deep learning</li>
+            <li>Optuna — recherche bayésienne d'hyperparamètres</li>
+            <li>Traitement du signal, explicabilité (Grad-CAM++)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Systèmes & langages</h4>
+          <ul>
+            <li>C, Java</li>
+            <li>Systèmes bas niveau, x86</li>
+            <li>Compilation (lexing, parsing, codegen)</li>
+            <li>Cybersécurité & infrastructure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-block">
+      <h2>Langues</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <ul>
+            <li>Français — langue maternelle</li>
+            <li>Anglais — courant</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="y"></span> Gabriel Poirier</p>
+    <div class="foot-links">
+      <a href="mailto:gabrielpoirier77@gmail.com">Email</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
