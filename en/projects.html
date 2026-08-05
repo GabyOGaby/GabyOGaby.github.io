@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Projects — Gabriel Poirier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Gabriel Poirier</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="lang-switch">
+        <a href="../projets.html">FR</a>
+        <span class="current">EN</span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:40px">
+  <div class="wrap" style="grid-template-columns:1fr; max-width:640px">
+    <div>
+      <p class="eyebrow">Projects</p>
+      <h1 style="font-size:clamp(30px,4vw,42px)">Professional, personal, academic.</h1>
+      <p class="lede">A selection of ongoing and completed projects, from machine learning applied to research to low-level systems.</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Professional</p>
+      <h2>Professional projects</h2>
+    </div>
+    <div class="project-list">
+
+      <article class="project" id="pfe-nmr">
+        <div class="project-meta">
+          Final-year project · 2025 – 2026
+          <br/><span class="status live">In progress</span>
+        </div>
+        <div>
+          <h3>Classifying NMR signals with deep learning</h3>
+          <p>Final-year engineering project carried out with INRAE. Goal: detect water-stress states and classify herbaceous plant species from NMR-MOUSE relaxometry signals (T2), using 1D and 2D convolutional neural networks.</p>
+          <p>Two-phase training strategy — pretraining on simulated data, then fine-tuning on real experimental data — built on a modular Python pipeline: Bayesian hyperparameter search (Optuna, TPE sampler), repeated stratified cross-validation, and explainability via Grad-CAM++.</p>
+          <div class="tags">
+            <span class="tag accent">Deep Learning</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Optuna</span>
+            <span class="tag">Signal processing</span>
+            <span class="tag">Grad-CAM++</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" id="cyber-infra-internship">
+        <div class="project-meta">
+          AI internship
+          <br/><span class="status">Details coming soon</span>
+        </div>
+        <div>
+          <h3>AI applied to cybersecurity & infrastructure</h3>
+          <p>Internship focused on applying AI methods to cybersecurity and infrastructure challenges. Detailed write-up to be added soon.</p>
+          <div class="tags">
+            <span class="tag copper">Cybersecurity</span>
+            <span class="tag">Infrastructure</span>
+            <span class="tag">AI</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Personal</p>
+      <h2>Personal projects</h2>
+    </div>
+    <div class="project-list">
+
+      <article class="project">
+        <div class="project-meta">
+          School project
+          <br/><span class="status">Completed</span>
+        </div>
+        <div>
+          <h3>Reinforcement-learning game AI</h3>
+          <p>Trained a reinforcement-learning agent to play a video game built in-house as part of an academic project. Detailed write-up to be added.</p>
+          <div class="tags">
+            <span class="tag accent">Reinforcement Learning</span>
+            <span class="tag">Game AI</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          Side project
+          <br/><span class="status">In progress</span>
+        </div>
+        <div>
+          <h3>Crafting profit calculator — Albion Online</h3>
+          <p>End-to-end app that fetches live in-game market data and computes crafting-profit optimizations for Albion Online: from price retrieval to recommending the most profitable recipes.</p>
+          <div class="tags">
+            <span class="tag">Data fetching</span>
+            <span class="tag">Optimization</span>
+            <span class="tag">Gaming</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Academic</p>
+      <h2>School projects</h2>
+    </div>
+    <div class="project-list">
+
+      <article class="project">
+        <div class="project-meta">
+          ENSIMAG
+          <br/><span class="status">Completed</span>
+        </div>
+        <div>
+          <h3>Java compiler for the DECA language</h3>
+          <p>Designed and built a compiler for DECA, a teaching language (ENSIMAG project): lexical and syntax analysis, semantic checking, and target code generation. Detailed write-up to be added.</p>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">Compilers</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta">
+          ENSIMAG
+          <br/><span class="status">Completed</span>
+        </div>
+        <div>
+          <h3>Designing an x86 operating system</h3>
+          <p>Low-level operating system project on x86 architecture: memory management, process scheduling, basic drivers. Detailed write-up to be added.</p>
+          <div class="tags">
+            <span class="tag">C</span>
+            <span class="tag">x86</span>
+            <span class="tag">Systems</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="y"></span> Gabriel Poirier</p>
+    <div class="foot-links">
+      <a href="mailto:gabrielpoirier77@gmail.com">Email</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

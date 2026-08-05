@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CV — Gabriel Poirier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Gabriel Poirier</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html" class="active">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="lang-switch">
+        <a href="../cv.html">FR</a>
+        <span class="current">EN</span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:32px">
+  <div class="wrap" style="grid-template-columns:1fr; max-width:640px">
+    <div class="cv-header">
+      <div>
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h1 style="font-size:clamp(30px,4vw,42px)">Gabriel Poirier</h1>
+        <p class="lede" style="margin-bottom:0">Engineering student at ENSIMAG — Machine Learning, signal processing, cybersecurity.</p>
+      </div>
+      <!-- Drop your PDF resume in assets/ and this button will work -->
+      <a class="btn primary" href="../assets/CV_Gabriel_Poirier.pdf" download>Download PDF ↓</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap" style="max-width:760px">
+
+    <div class="cv-block">
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="when">2023 — 2026</div>
+        <div>
+          <h3>Engineering degree</h3>
+          <span class="org">ENSIMAG, Grenoble INP</span>
+          <p>General computer science curriculum, specializing in artificial intelligence and systems security. Currently in final year.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2021 — 2023</div>
+        <div>
+          <h3>Preparatory classes for engineering schools</h3>
+          <span class="org">To be completed</span>
+          <p>Science track — mathematics, physics and computer science.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-block">
+      <h2>Experience</h2>
+      <div class="entry">
+        <div class="when">2025 — 2026</div>
+        <div>
+          <h3>Final-year project — Deep learning for NMR signals</h3>
+          <span class="org">INRAE</span>
+          <p>Classifying NMR-MOUSE relaxometry signals (T2) with 1D/2D convolutional networks to detect water stress and classify plant species. Modular Python pipeline: Optuna (TPE), repeated cross-validation, Grad-CAM++ explainability.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">To be completed</div>
+        <div>
+          <h3>Internship — AI applied to cybersecurity & infrastructure</h3>
+          <span class="org">To be completed</span>
+          <p>Detailed description coming soon.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-block">
+      <h2>Skills</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h4>Machine Learning</h4>
+          <ul>
+            <li>Python, PyTorch</li>
+            <li>1D / 2D CNNs, deep learning</li>
+            <li>Optuna — Bayesian hyperparameter search</li>
+            <li>Signal processing, explainability (Grad-CAM++)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Systems & languages</h4>
+          <ul>
+            <li>C, Java</li>
+            <li>Low-level systems, x86</li>
+            <li>Compilers (lexing, parsing, codegen)</li>
+            <li>Cybersecurity & infrastructure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-block">
+      <h2>Languages</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <ul>
+            <li>French — native</li>
+            <li>English — fluent</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="y"></span> Gabriel Poirier</p>
+    <div class="foot-links">
+      <a href="mailto:gabrielpoirier77@gmail.com">Email</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
